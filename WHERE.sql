@@ -37,7 +37,7 @@ LIMIT 1000
 -- COMMAND ----------
 
 SELECT *,
-       DATEDIFF(dtEstimativaEntrega, dtAprovado)
+       DATEDIFF(dtEstimativaEntrega, dtAprovado) AS diffDatasAprovadoPrevisao
        
 FROM silver_olist.pedido
 
